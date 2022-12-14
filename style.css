@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    min-height: 100vh;
+    padding-bottom: 5rem;
+    background-color: #242d38;
+    font-family: 'Poppins', sans-serif;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 800,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+
+/* ! START OF HEADER SECTION */
+#HeaderDiv {
+    z-index: 99;
+    background-color: #242d38;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60px;
+    border-bottom: 1px solid #efd592;
+    padding: 0% 1%;
+    color: #efd592;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#HeaderDiv h2 {
+    font-size: 36px;
+    font-weight: lighter;
+    letter-spacing: 0.4rem;
+}
+
+#HeaderDiv .material-symbols-outlined {
+    font-size: 24px;
+    transform: translateY(4px)
+}
+
+/* ! END OF HEADER SECTION */
+
+
+
+/* ! START OF CARD SECTION */
+#ContainerDiv {
+    margin-top: 60px;
+    padding-top: 50px;
+    min-height: 100vh;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    row-gap: 90px;
+}
+
+#MovieCard {
+    background-color: #efd592;
+    min-width: 400px;
+    max-height: 100%;
+    padding: 40px;
+    margin: 0 10px;
+    flex-shrink: 0;
+    flex-basis: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#MovieCard h1 {
+    /* padding-bottom: 36px; */
+    color: #242d38;
+    position: relative;
+}
+
+.MovieYear {
+    color: #242d38;
+    padding: 0 0 0.6em 0;
+    font-size: 18px;
+    font-weight: regular;
+}
+
+.MovieText {
+    color: #242d38;
+    padding-top: 0.3em;
+    font-size: 18px;
+}
+
+.CardNumber {
+    height: 40px;
+    width: 40px;
+    background-color: #242d38;
+    border: 2px solid #efd592;
+    color: #efd592;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    transform: translate(380%, -2.4em);
+}
+
+.MovieDetails {
+    height: 50px;
+    width: 100%;
+    background-color: #242d38;
+    border: 1px solid #efd592;
+    color: #efd592;
+    margin-top: auto;
+    padding: 0.8em;
+    font-size: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    align-self: center;
+    transform: translateY(4.6em);
+}
+
+.MovieDetails:hover {
+    cursor: pointer;
+    background-color: #efd592;
+    border: 1px solid #242d38;
+    color: #242d38;
+}
+
+hr {
+    border-top: 1px solid #242d38;
+}
+
+.MovieDetails .material-symbols-outlined {
+    font-size: 36px;
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 600,
+        'GRAD' 0,
+        'opsz' 48
+}
+
+/* ! END OF CARD SECTION */
+
+
+/* ! MEDIA QUERY SECTION */
+
+@media screen and (max-width: 750px) {
+    #HeaderDiv h2 {
+        font-size: 16px;
+    }
+}
